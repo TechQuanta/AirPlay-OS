@@ -1,6 +1,7 @@
 import 'dart:async'; // Required for Timer
 import 'package:flutter/material.dart';
-import 'package:airplay_gui/main.dart';
+// CORRECTED IMPORT: We need to import the screen we navigate to.
+import 'package:airplay_gui/features/home/presentation/screen/home_screen.dart';
 
 class LoadingScreen extends StatefulWidget {
   const LoadingScreen({super.key});
@@ -100,8 +101,9 @@ class _LoadingScreenState extends State<LoadingScreen> with TickerProviderStateM
       _statusFadeController.stop();
       _cursorBlinkController.stop(); // Stop the cursor blink
 
+      // CORRECTED: Navigate directly to HomeScreen
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const MyApp()),
+        MaterialPageRoute(builder: (_) => const HomeScreen()),
       );
     }
   }
