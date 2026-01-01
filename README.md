@@ -1,4 +1,4 @@
-## Airplay OS: AI-Powered Productivity Shell 🚀
+## Welcome to colab open to all !
 
 **Reduce Typing, Amplify Output. A High-Fidelity OS built with Dart & Flutter for maximum efficiency.**
 
